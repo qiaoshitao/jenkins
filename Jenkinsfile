@@ -58,6 +58,7 @@
             
             steps {
                 echo "sonar-jacoco测试"
+                echo env.baidu
             }
         }
         stage("deploy") {
