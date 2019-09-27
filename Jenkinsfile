@@ -44,7 +44,7 @@
         stage("build") {
             
             steps {
-             echo ${env.imageUrl}
+             echo env.imageUrl
             }
         }
         stage("sonar-jacoco") {
