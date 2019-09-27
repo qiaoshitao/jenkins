@@ -73,7 +73,7 @@
             echo "构建成功"
         }
         failure {
-            echo "构建失败"
+            echo "构建失败."
         }
     }
 }
