@@ -42,7 +42,11 @@
 
     stages {
         stage("build") {
-            
+            when {
+                anyOf {
+                    expression { return params.build_all }
+                }
+            }
             steps {
              echo env.imageUrl
              echo env.BRANCH_NAME
