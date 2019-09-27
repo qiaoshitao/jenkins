@@ -46,7 +46,8 @@
             steps {
              echo env.imageUrl
              echo env.BRANCH_NAME
-             
+             echo params.rollback_project
+             echo params.rollback_build_number
             }
         }
         stage("sonar-jacoco") {
