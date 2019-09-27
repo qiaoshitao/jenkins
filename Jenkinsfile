@@ -45,6 +45,8 @@
             
             steps {
              echo env.imageUrl
+             echo env.BRANCH_NAME
+             echo params.build_all
             }
         }
         stage("sonar-jacoco") {
